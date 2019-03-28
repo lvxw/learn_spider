@@ -28,7 +28,7 @@ def regular_code():
     url = "https://www.baidu.com/"
     headers = {"User-Agent": "Mozilla/5.0"}
     try:
-        r = requests.get(url, headers=headers, params=)
+        r = requests.get(url, headers=headers)
         r.encoding = r.apparent_encoding
         r.raise_for_status()
         return r.text
